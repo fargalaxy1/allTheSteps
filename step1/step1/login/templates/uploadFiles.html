@@ -1,0 +1,27 @@
+<html lang="en">
+	<head>
+		<title>GPU server gateway</title>
+	</head>
+
+	<body>
+				<!-- List of uploaded documents -->
+		{% if images %}
+			<ul>
+			{% for image in images %}
+				<li><a >{{ image.sourceImage_url}}</a></li>
+				<li><a >{{ image.referenceImage }}</a></li>
+			{% endfor %}
+			</ul>
+		{% else %}
+			<p>No documents.</p>
+		{% endif %}
+
+		<!-- Upload form. Note enctype attribute! -->
+		<form action="{% url "upload" %}" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<p>{{form.as_p}} </p>
+			<p><input type="submit" value="Upload" /></p>
+		</form>
+	
+    </body>
+</html>

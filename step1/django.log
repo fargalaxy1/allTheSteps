@@ -1,0 +1,1156 @@
+[ERROR] 2014-11-17 14:13:39,616 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 44, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 88, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 771, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 58, in _get_path
+    self._require_file()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'sourceImage' attribute has no file associated with it.
+[ERROR] 2014-11-17 14:13:41,777 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 44, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 88, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 771, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 58, in _get_path
+    self._require_file()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'sourceImage' attribute has no file associated with it.
+[ERROR] 2014-11-17 14:14:23,236 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 44, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 88, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 771, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 58, in _get_path
+    self._require_file()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'sourceImage' attribute has no file associated with it.
+[ERROR] 2014-11-17 14:23:13,882 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 44, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 88, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 771, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 58, in _get_path
+    self._require_file()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'sourceImage' attribute has no file associated with it.
+[ERROR] 2014-11-17 14:46:36,593 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 44, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 88, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 771, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 63, in _get_url
+    self._require_file()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'referenceImage' attribute has no file associated with it.
+[ERROR] 2014-11-17 14:47:36,640 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 44, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 88, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 771, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 44, in _get_file
+    self._require_file()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'referenceImage' attribute has no file associated with it.
+[ERROR] 2014-11-17 14:49:19,871 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 88, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 771, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 44, in _get_file
+    self._require_file()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'referenceImage' attribute has no file associated with it.
+[ERROR] 2014-11-17 15:04:11,633 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 305, in render
+    return nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 196, in render
+    nodelist.append(node.render(context))
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 88, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 771, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 58, in _get_path
+    self._require_file()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'sourceImage' attribute has no file associated with it.
+[ERROR] 2014-11-18 09:18:48,751 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/base.py", line 87, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/edit.py", line 171, in post
+    return self.form_valid(form)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 61, in form_valid
+    connect_via_SSH_and_upload(hostname, user, password)
+NameError: global name 'connect_via_SSH_and_upload' is not defined
+[ERROR] 2014-11-18 09:19:11,363 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 09:19:20,279 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 09:19:35,406 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 09:39:20,685 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 95
+    except Exception as e:
+         ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-18 09:39:25,829 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 95
+    except Exception as e:
+         ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-18 09:40:19,990 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 09:40:47,091 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/base.py", line 87, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/edit.py", line 171, in post
+    return self.form_valid(form)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 61, in form_valid
+    connect_via_SSH_and_ls(hostname, user, password)
+NameError: global name 'connect_via_SSH_and_ls' is not defined
+[ERROR] 2014-11-18 09:41:01,295 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/base.py", line 87, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/views/generic/edit.py", line 171, in post
+    return self.form_valid(form)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 61, in form_valid
+    connect_via_SSH_and_ls(hostname, user, password)
+NameError: global name 'connect_via_SSH_and_ls' is not defined
+[ERROR] 2014-11-18 09:41:51,089 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 09:43:00,921 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 09:43:46,577 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 10:03:06,853 django.request : Internal Server Error: /step1/sshcredentials/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 43
+    get host key, if we know one
+           ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-18 10:03:31,184 django.request : Internal Server Error: /step1/sshcredentials/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 103
+    
+    ^
+IndentationError: unexpected unindent
+[ERROR] 2014-11-18 10:03:47,263 django.request : Internal Server Error: /step1/sshcredentials/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 103
+    
+    ^
+IndentationError: unexpected unindent
+[ERROR] 2014-11-18 10:09:20,775 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 10:09:48,123 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.CollectSSHCredentials didn't return an HttpResponse object.
+[ERROR] 2014-11-18 10:13:20,253 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 62
+    return HttpResponseRedirect(self.get_success_url())
+SyntaxError: 'return' outside function
+[ERROR] 2014-11-18 10:48:13,469 django.request : Internal Server Error: /step1/sshcredentials/connect/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 86
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 10:48:17,549 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 86
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 10:49:09,713 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 81
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 10:49:24,352 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 80
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 10:50:36,447 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 48
+    def connect_via_SSH_and_upload(hostname=None, username=None, password=None):
+      ^
+IndentationError: expected an indented block
+[ERROR] 2014-11-18 10:51:10,960 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 81
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 10:52:02,967 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 109
+    except Exception as e:
+    ^
+IndentationError: expected an indented block
+[ERROR] 2014-11-18 14:23:23,465 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 7, in <module>
+    from step1.login.models import Image
+ImportError: cannot import name Image
+[ERROR] 2014-11-18 14:23:29,418 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 7, in <module>
+    from step1.login.models import Image
+ImportError: cannot import name Image
+[ERROR] 2014-11-18 14:30:09,677 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: login_image
+[ERROR] 2014-11-18 15:27:54,309 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 94
+    print sourceimage.sourceimage
+                                ^
+IndentationError: unindent does not match any outer indentation level
+[ERROR] 2014-11-18 15:36:41,041 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 49
+    def connect_via_SSH_and_upload(hostname=None, username=None, password=None):
+                                                                               ^
+IndentationError: expected an indented block
+[ERROR] 2014-11-18 15:39:38,799 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 86
+    print ('uuuuuu')
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 15:39:59,261 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 83
+    print ('uuuuuu')
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 15:40:18,551 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 82
+    print ('uuuuuu')
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 15:40:47,533 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 82
+    print ('uuuuuu')
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 15:41:04,013 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 82
+    print ('uuuuuu')
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 15:41:20,755 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 82
+    print ('uuuuuu')
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 15:45:06,043 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 85
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+                                                   ^
+IndentationError: unindent does not match any outer indentation level
+[ERROR] 2014-11-18 15:45:22,157 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 85
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+                                                   ^
+IndentationError: unindent does not match any outer indentation level
+[ERROR] 2014-11-18 15:48:11,836 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 83
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 15:48:37,261 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 83
+    mk_each_dir(sftp,userRemoteInFolder) # Version 1
+    ^
+IndentationError: unexpected indent
+[ERROR] 2014-11-18 15:49:10,525 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 90
+    t.close()
+            ^
+IndentationError: unindent does not match any outer indentation level
