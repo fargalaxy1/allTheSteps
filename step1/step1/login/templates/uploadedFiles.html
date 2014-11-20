@@ -17,13 +17,12 @@
 			<p>No documents.</p>
 		{% endif %}
 
-		<!-- Upload form. Note enctype attribute! -->
-		<form action="{% url "upload" %}" method="post" enctype="multipart/form-data">
-			{% csrf_token %}
-			
-			<p>{{form.as_p}} </p>
-			<p><input type="submit" value="Upload" /></p>
-		</form>
-	
+	<form action="{% url "upload" %}" method="post">
+		{% csrf_token %}
+		<input type="submit" name="confirm_inputimgs" value="Confirm" />
+		<input type="submit" name="update_inputimgs" value="Update" />
+	</form>
+
+
     </body>
 </html>

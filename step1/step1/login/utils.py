@@ -83,10 +83,21 @@ def connect_via_SSH_and_upload(hostname=None, username=None, password=None):
 		# copy this demo onto the server
 		mk_each_dir(sftp,userRemoteInFolder)
 		print ('after')
-		sourceimage = Image.objects.get(pk=1).sourceImage
-		myPath = settings.MEDIA_ROOT + '/' + sourceimage.name
-		print myPath		
-		sftp.put(myPath, userRemoteInFolder +'/input_band1.tif')
+		sourceimage_b1 = Image.objects.get(pk=1).sourceImage_b1
+		srcimage_b1_localPath = settings.MEDIA_ROOT + '/' + sourceimage_b1.name
+		sourceimage_rgb = Image.objects.get(pk=1).sourceImage_rgb
+		srcimage_rgb_localPath = settings.MEDIA_ROOT + '/' + sourceimage_rgb.name
+		referenceimage_b1 = Image.objects.get(pk=1).referenceImage_b1
+		rgbimage_b1_localPath = settings.MEDIA_ROOT + '/' + referenceimage_b1.name
+
+		print srcimage_b1_localPath
+		print sourceimage_rgb
+		print rgbimage_b1_localPath
+
+		sftp.put(srcimage_b1_localPath, userRemoteInFolder +'/source_band1.tif')
+		sftp.put(srcimage_rgb_localPath, userRemoteInFolder +'/source_rgb.tif')
+		sftp.put(rgbimage_b1_localPath, userRemoteInFolder +'/reference_band1.tif')
+
 	    # sftp.get('demo_sftp_folder/README', 'README_demo_sftp')
 		t.close()
 

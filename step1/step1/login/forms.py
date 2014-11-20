@@ -9,10 +9,12 @@ logger = logging.getLogger("step1." + __name__)
 class ImageForm(forms.Form):
     logger.debug("class ImageForm")
 
-    sourceImage = forms.ImageField(
-        label='Select source image')
-    referenceImage = forms.ImageField(
-        label='Select reference image')
+    sourceImage_b1 = forms.ImageField(
+        label='Select monochromatic source image ')
+    sourceImage_rgb = forms.ImageField(
+        label='Select rgb source image')
+    referenceImage_b1 = forms.ImageField(
+        label='Select monochromatic reference image')
 
 
 class SshCredentialsForm(forms.ModelForm):

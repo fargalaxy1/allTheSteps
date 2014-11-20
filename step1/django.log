@@ -1154,3 +1154,688 @@ Traceback (most recent call last):
     t.close()
             ^
 IndentationError: unindent does not match any outer indentation level
+[ERROR] 2014-11-19 09:00:07,171 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.sourceImage_b1
+[ERROR] 2014-11-19 09:00:48,666 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.sourceImage_b1
+[ERROR] 2014-11-19 09:02:03,312 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.sourceImage_b1
+[ERROR] 2014-11-19 09:06:32,869 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.sourceImage_b1
+[ERROR] 2014-11-19 09:11:35,471 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.sourceImageb1
+[ERROR] 2014-11-19 09:11:50,284 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.sourceImageb1
+[ERROR] 2014-11-19 09:12:08,912 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 46, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.sourceImageb1
+[ERROR] 2014-11-19 13:09:38,581 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 38, in uploadFunction
+    print images
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 74, in __repr__
+    return repr(data)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/base.py", line 423, in __repr__
+    u = six.text_type(self)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/models.py", line 15, in __unicode__
+    return self.image.name
+AttributeError: 'Image' object has no attribute 'image'
+[ERROR] 2014-11-19 13:11:57,448 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 38, in uploadFunction
+    print images
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 74, in __repr__
+    return repr(data)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/base.py", line 423, in __repr__
+    u = six.text_type(self)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/models.py", line 15, in __unicode__
+    return self.image.name
+AttributeError: 'Image' object has no attribute 'image'
+[ERROR] 2014-11-19 13:12:36,776 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 38, in uploadFunction
+    print images.id
+AttributeError: 'QuerySet' object has no attribute 'id'
+[ERROR] 2014-11-19 13:12:51,872 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 38, in uploadFunction
+    print images.sourceImage_b1
+AttributeError: 'QuerySet' object has no attribute 'sourceImage_b1'
+[ERROR] 2014-11-19 13:16:19,637 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 42, in uploadFunction
+    print images
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 74, in __repr__
+    return repr(data)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/base.py", line 423, in __repr__
+    u = six.text_type(self)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/models.py", line 15, in __unicode__
+    return self.image.name
+AttributeError: 'Image' object has no attribute 'image'
+[ERROR] 2014-11-19 15:05:51,310 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 18
+    if(Image.objects.get(pk=1).exists){
+                                      ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 15:07:10,064 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 18
+    if(Image.objects.get(pk=1).exists()){
+                                        ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 15:08:54,952 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 18
+    if(1==0)
+           ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 15:09:16,056 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 18
+    if(1==0)
+           ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 15:09:44,937 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 19
+    if(id==0)
+            ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 15:10:08,336 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 19
+    if(trenta==0)
+                ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 15:10:48,873 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 19
+    if(trenta==0)
+                ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 15:11:52,626 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.uploadFunction didn't return an HttpResponse object.
+[ERROR] 2014-11-19 15:58:33,126 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 43, in uploadFunction
+    print "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPP" + querytest
+TypeError: cannot concatenate 'str' and 'int' objects
+[ERROR] 2014-11-19 16:13:21,083 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 20
+    if(imagesCounter)
+                    ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 16:13:50,385 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 18
+    if(imagesCounter>0)
+                      ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-19 16:18:05,789 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 22, in uploadFunction
+    {'images': imagesm},
+NameError: global name 'imagesm' is not defined
+[ERROR] 2014-11-20 08:49:15,314 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.uploadFunction didn't return an HttpResponse object.
+[ERROR] 2014-11-20 08:50:27,296 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 130, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view step1.login.views.uploadFunction didn't return an HttpResponse object.
+[ERROR] 2014-11-20 09:59:32,167 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 28, in uploadFunction
+    post_delete.connect(delete_imagefield, tobedeleted)
+NameError: global name 'post_delete' is not defined
+[ERROR] 2014-11-20 10:01:16,897 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 29, in uploadFunction
+    post_delete.connect(delete_imagefield, tobedeleted)
+NameError: global name 'delete_imagefield' is not defined
+[ERROR] 2014-11-20 10:03:39,387 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 8, in <module>
+    from step1.login.models.Image import delete_imagefield
+ImportError: No module named Image
+[ERROR] 2014-11-20 10:07:34,275 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 8
+    from step1.login.models import Image.delete_imagefield
+                                        ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-20 10:21:04,036 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 8
+    from step1.login.models import Image.delete_imagefield
+                                        ^
+SyntaxError: invalid syntax
+[ERROR] 2014-11-20 10:22:12,910 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 28, in uploadFunction
+    tobedeleted.delete()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 468, in delete
+    collector.delete()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/deletion.py", line 282, in delete
+    sender=model, instance=obj, using=self.using
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 185, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/models.py", line 20, in delete_imagefield
+    tobedel.file.delete(save=False)
+AttributeError: 'Image' object has no attribute 'file'
