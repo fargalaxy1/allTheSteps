@@ -20,7 +20,7 @@ def uploadFunction(request):
 		images = Image.objects.all()
 		if request.method == 'POST':
 			if 'confirm_inputimgs' in request.POST:
-				logger.debug("confirm uploade files")
+				logger.debug("confirm uploaded files")
 				return HttpResponseRedirect('sshcredentials/')
 			elif 'update_inputimgs' in request.POST:
 				logger.debug("update files")
