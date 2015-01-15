@@ -1839,3 +1839,345 @@ Traceback (most recent call last):
   File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/models.py", line 20, in delete_imagefield
     tobedel.file.delete(save=False)
 AttributeError: 'Image' object has no attribute 'file'
+[ERROR] 2015-01-14 15:08:07,119 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 11
+    url(r'^runimagetoimage/', views.ConnectViaSSH.as_view())
+      ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:08:08,141 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 11
+    url(r'^runimagetoimage/', views.ConnectViaSSH.as_view())
+      ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:08:14,982 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 11
+    url(r'^runimagetoimage/', views.ConnectViaSSH.as_view())
+      ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:08:55,010 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 50
+    if dirElement:
+     ^
+IndentationError: expected an indented block
+[ERROR] 2015-01-14 15:10:30,534 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 128
+    except OSError as exc: # Python >2.5
+         ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:11:11,205 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 128
+    except OSError as exc: # Python >2.5
+         ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:18:10,429 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 128
+    except OSError, exc: # Python >2.5
+         ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:18:33,061 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 128
+    except OSError, exc: # Python >2.5
+         ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:19:01,223 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 128
+    except OSError as exc: # Python >2.5
+         ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:19:12,622 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 131
+    else: raise
+       ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-14 15:48:53,620 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in testLocally
+    test_setup_and_upload(roothPath, userName);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 152, in test_setup_and_upload
+    copyfile(sourceimage_b1, srcimage_b1_localPath);
+NameError: global name 'copyfile' is not defined
+[ERROR] 2015-01-14 15:49:55,982 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in testLocally
+    test_setup_and_upload(roothPath, userName);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 152, in test_setup_and_upload
+    shutil.copyfile(sourceimage_b1, srcimage_b1_localPath);
+  File "/usr/lib/python2.7/shutil.py", line 68, in copyfile
+    if _samefile(src, dst):
+  File "/usr/lib/python2.7/shutil.py", line 58, in _samefile
+    return os.path.samefile(src, dst)
+  File "/home/giovamt/stacippa/lib/python2.7/posixpath.py", line 162, in samefile
+    s1 = os.stat(f1)
+TypeError: coercing to Unicode: need string or buffer, ImageFieldFile found
+[ERROR] 2015-01-14 15:52:58,728 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in testLocally
+    test_setup_and_upload(roothPath, userName);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 155, in test_setup_and_upload
+    shutil.copyfile(srcimage_b1_localPath, currentUserLocalIn + sourceimage_b1.name);
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 2] No such file or directory: u'/home/giovamt/webAppFolder/imageToImage/users/giovamt/in/test/materass.png'
+[ERROR] 2015-01-14 15:53:59,136 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in testLocally
+    test_setup_and_upload(roothPath, userName);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 154, in test_setup_and_upload
+    shutil.copyfile(srcimage_b1_localPath, currentUserLocalIn + sourceimage_b1.name);
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 2] No such file or directory: u'/home/giovamt/webAppFolder/imageToImage/users/giovamt/in/test/materass.png'
+[ERROR] 2015-01-14 15:54:40,621 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in testLocally
+    test_setup_and_upload(roothPath, userName);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 154, in test_setup_and_upload
+    shutil.copyfile(srcimage_b1_localPath, currentUserLocalIn + sourceimage_b1.name);
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 2] No such file or directory: u'/home/giovamt/webAppFolder/imageToImage/users/giovamt/in/test/materass.png'
+[ERROR] 2015-01-14 15:55:33,626 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in testLocally
+    test_setup_and_upload(roothPath, userName);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 154, in test_setup_and_upload
+    shutil.copyfile(srcimage_b1_localPath, currentUserLocalIn + sourceimage_b1.name);
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 2] No such file or directory: u'/home/giovamt/webAppFolder/imageToImage/users/giovamt/in/test/materass.png'
+[ERROR] 2015-01-15 08:50:10,561 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 164
+    
+    ^
+IndentationError: expected an indented block

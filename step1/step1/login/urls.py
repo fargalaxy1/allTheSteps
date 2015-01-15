@@ -7,5 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 	url(r'^$', 'step1.login.views.uploadFunction', name='upload'), 
 	url(r'^sshcredentials/$', views.CollectSSHCredentials.as_view()),
-	url(r'^connect/', views.ConnectViaSSH.as_view())
+	url(r'^connect/', views.ConnectViaSSH.as_view()),
+	url(r'^runimagetoimage/', views.ConnectViaSSH.as_view()),
+	url(r'^localTest/$', 'step1.login.views.testLocally', name= 'localTest')
 	)

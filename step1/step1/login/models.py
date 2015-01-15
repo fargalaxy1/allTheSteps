@@ -22,3 +22,7 @@ def delete_imagefield(sender, **kwargs):
 	tobedel.referenceImage_b1.delete(save=False)
 
 post_delete.connect(delete_imagefield, Image)
+
+# class LocalEnv(models.Model):
+# 	localIn  = models.
+# 	localOut =
