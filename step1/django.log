@@ -2181,3 +2181,580 @@ Traceback (most recent call last):
     
     ^
 IndentationError: expected an indented block
+[ERROR] 2015-01-15 10:20:59,341 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in testLocally
+    print "imageEPSG " + imageEPSG
+TypeError: cannot concatenate 'str' and 'int' objects
+[ERROR] 2015-01-15 10:21:56,395 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    currentUsrLocalHomePath = roothPath + 'users/' + username + '/'
+NameError: global name 'username' is not defined
+[ERROR] 2015-01-15 10:23:46,374 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 108, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+NameError: global name 'setup_configuration_files' is not defined
+[ERROR] 2015-01-15 10:38:18,131 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 38, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.epsg
+[ERROR] 2015-01-15 10:39:22,251 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 38, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.epsg
+[ERROR] 2015-01-15 10:40:58,672 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 38, in uploadFunction
+    context_instance=RequestContext(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 304, in render
+    if match:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 100, in __nonzero__
+    self._fetch_all()
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 69, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/util.py", line 53, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 451, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: login_image.epsg
+[ERROR] 2015-01-15 10:46:25,754 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 50, in uploadFunction
+    epsg = request.FILES['epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'epsg'"
+[ERROR] 2015-01-15 10:52:48,882 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 50, in uploadFunction
+    epsg = request.FILES['image_epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'image_epsg'"
+[ERROR] 2015-01-15 10:56:57,098 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 51, in uploadFunction
+    epsg = request.FILES['image_epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'image_epsg'"
+[ERROR] 2015-01-15 10:58:16,965 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 51, in uploadFunction
+    epsg = request.FILES['image_epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'image_epsg'"
+[ERROR] 2015-01-15 10:58:43,840 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 51, in uploadFunction
+    epsg = request.FILES['image_epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'image_epsg'"
+[ERROR] 2015-01-15 10:59:13,897 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 51, in uploadFunction
+    epsg = request.FILES['image_epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'image_epsg'"
+[ERROR] 2015-01-15 11:00:56,573 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 51, in uploadFunction
+    epsg = request.FILES['image_epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'image_epsg'"
+[ERROR] 2015-01-15 11:03:53,304 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 51, in uploadFunction
+    epsg = request.FILES['image_epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'image_epsg'"
+[ERROR] 2015-01-15 11:04:35,751 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 51, in uploadFunction
+    epsg = request.FILES['epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'epsg'"
+[ERROR] 2015-01-15 11:11:31,839 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 51, in uploadFunction
+    epsg = request.FILES['epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'epsg'"
+[ERROR] 2015-01-15 11:12:42,100 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 53, in uploadFunction
+    epsg = request.FILES['epsg']
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 301, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'epsg'"
+[ERROR] 2015-01-15 11:13:17,688 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 53, in uploadFunction
+    epsg = request.POST.get['epsg']
+TypeError: 'instancemethod' object has no attribute '__getitem__'
+[ERROR] 2015-01-15 11:14:05,439 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 104, in testLocally
+    print imageEPSG
+NameError: global name 'imageEPSG' is not defined
+[ERROR] 2015-01-15 11:28:44,766 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+NameError: global name 'setup_configuration_files' is not defined
+[ERROR] 2015-01-15 11:28:53,747 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+NameError: global name 'setup_configuration_files' is not defined
+[ERROR] 2015-01-15 12:02:21,693 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload, setup_configuration_files
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 15, in <module>
+    srcimage_b1_localPath = NULL
+NameError: name 'NULL' is not defined
+[ERROR] 2015-01-15 12:12:21,838 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 177, in setup_configuration_files
+    config_src.truncate()
+EOFError
+[ERROR] 2015-01-15 12:12:21,838 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 177, in setup_configuration_files
+    config_src.truncate()
+EOFError
+[ERROR] 2015-01-15 12:12:21,838 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 177, in setup_configuration_files
+    config_src.truncate()
+EOFError
+[ERROR] 2015-01-15 12:12:21,839 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 177, in setup_configuration_files
+    config_src.truncate()
+EOFError
+[ERROR] 2015-01-15 12:12:29,563 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload, setup_configuration_files
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 15, in <module>
+    srcimage_b1_localPath = NULL
+NameError: name 'NULL' is not defined
+[ERROR] 2015-01-15 12:13:16,068 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 178, in setup_configuration_files
+    line1 = srcimage_b1_localPath + ", " + imageEPSG
+TypeError: coercing to Unicode: need string or buffer, int found
+[ERROR] 2015-01-15 12:19:39,013 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import connect_via_SSH_and_upload, setup_configuration_files
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 15, in <module>
+    srcimage_b1_localPath, srcimage_rgb_localPath, rgbimage_b1_localPath = 0
+TypeError: 'int' object is not iterable
+[ERROR] 2015-01-15 12:20:40,691 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 181, in setup_configuration_files
+    line2 = srcimage_rgb_localPath + ", " + str(imageEPSG)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+[ERROR] 2015-01-15 12:21:50,448 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 181, in setup_configuration_files
+    line2 = srcimage_rgb_localPath + ", " + str(imageEPSG)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+[ERROR] 2015-01-15 12:49:52,980 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 181, in setup_configuration_files
+    line2 = srcimage_rgb_localPath + ", " + str(imageEPSG)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+[ERROR] 2015-01-15 12:51:55,421 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 183, in setup_configuration_files
+    line2 = srcimage_rgb_localPath + ", " + str(imageEPSG)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+[ERROR] 2015-01-15 12:52:19,439 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in testLocally
+    setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 183, in setup_configuration_files
+    line2 = srcimage_rgb_localPath + ", " + str(imageEPSG)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+[ERROR] 2015-01-15 13:56:36,026 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+NameError: global name 'run_routine_and_save' is not defined
+[ERROR] 2015-01-15 14:04:38,172 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+NameError: global name 'run_routine_and_save' is not defined
+[ERROR] 2015-01-15 14:33:54,696 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+NameError: global name 'run_routine_and_save' is not defined
+[ERROR] 2015-01-15 14:34:19,266 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 209, in run_routine_and_save
+    copyfile(srcGroovy, dstGroovy)
+NameError: global name 'copyfile' is not defined
+[ERROR] 2015-01-15 14:35:02,870 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 209, in run_routine_and_save
+    copyfile(srcGroovy, dstGroovy)
+NameError: global name 'copyfile' is not defined
+[ERROR] 2015-01-15 14:35:56,584 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 209, in run_routine_and_save
+    shutil.copyfile(srcGroovy, dstGroovy)
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 21] Is a directory: '/home/giovamt/webAppFolder/imageToImage/users/giovamt/'
+[ERROR] 2015-01-15 14:37:59,182 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 212, in run_routine_and_save
+    shutil.copyfile(srcGroovy, dstGroovy)
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 21] Is a directory: '/home/giovamt/webAppFolder/imageToImage/users/giovamt/'
+[ERROR] 2015-01-15 14:39:09,353 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 212, in run_routine_and_save
+    shutil.copyfile(srcGroovy, dstGroovy)
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 21] Is a directory: '/home/giovamt/webAppFolder/imageToImage/users/giovamt/'
+[ERROR] 2015-01-15 14:40:04,257 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 219, in run_routine_and_save
+    shutil.copy(srcCudadir, dstCudadir)
+  File "/usr/lib/python2.7/shutil.py", line 119, in copy
+    copyfile(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 82, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 21] Is a directory: '/home/giovamt/webAppFolder/imageToImage/sources/cudaPhaseCorrelation/'
+[ERROR] 2015-01-15 14:40:55,502 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 219, in run_routine_and_save
+    shutil.copy(srcCudadir, dstCudadir)
+  File "/usr/lib/python2.7/shutil.py", line 119, in copy
+    copyfile(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 82, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 21] Is a directory: '/home/giovamt/webAppFolder/imageToImage/sources/cudaPhaseCorrelation/'
+[ERROR] 2015-01-15 14:54:26,160 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 218, in run_routine_and_save
+    shutil.copytree(srcCudadir, dstCudadir)
+  File "/usr/lib/python2.7/shutil.py", line 177, in copytree
+    os.makedirs(dst)
+  File "/home/giovamt/stacippa/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 17] File exists: '/home/giovamt/webAppFolder/imageToImage/users/giovamt/cudaPhaseCorrelation/'
+[ERROR] 2015-01-15 14:56:32,194 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 226, in run_routine_and_save
+    copyanything(srcCudadir, dstCudadir)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 205, in copyanything
+    shutil.copytree(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 177, in copytree
+    os.makedirs(dst)
+  File "/home/giovamt/stacippa/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 17] File exists: '/home/giovamt/webAppFolder/imageToImage/users/giovamt/cudaPhaseCorrelation/'
+[ERROR] 2015-01-15 15:04:03,386 django.request : Internal Server Error: /step1/localTest/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in testLocally
+    run_routine_and_save(currentUsrLocalHomePath);
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 226, in run_routine_and_save
+    copyanything(srcCudadir, dstCudadir)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 205, in copyanything
+    shutil.copytree(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 177, in copytree
+    os.makedirs(dst)
+  File "/home/giovamt/stacippa/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 17] File exists: '/home/giovamt/webAppFolder/imageToImage/users/giovamt/cudaPhaseCorrelation/'

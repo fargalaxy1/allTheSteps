@@ -15,6 +15,8 @@ class ImageForm(forms.Form):
         label='Select rgb source image')
     referenceImage_b1 = forms.ImageField(
         label='Select monochromatic reference image')
+    epsg = forms.IntegerField(
+        label='Input EPSG number')
 
 
 class SshCredentialsForm(forms.ModelForm):

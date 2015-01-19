@@ -12,7 +12,15 @@ from paramiko.py3compat import input
 import paramiko
 from step1.login.models import Image
 
-def getEPSG_via_SSH(hostname=None, username=None, password=None, image_localPath= None):
+srcimage_b1_localPath = 0
+srcimage_rgb_localPath = 0
+rgbimage_b1_localPath = 0
+
+groovyScript = "imageToImage_Registration_cutSource.groovy"
+cudaRunDirectory = "cudaPhaseCorrelation/"
+roothPath = '/home/giovamt/webAppFolder/imageToImage/'
+
+def connect_via_SSH_and_ls(hostname=None, username=None, password=None):
 	UseGSSAPI = True             # enable GSS-API / SSPI authentication
 	DoGSSAPIKeyExchange = True
 	port = 22
@@ -23,16 +31,10 @@ def getEPSG_via_SSH(hostname=None, username=None, password=None, image_localPath
 		client.load_system_host_keys()
 		client.set_missing_host_key_policy(paramiko.WarningPolicy())
 		client.connect(hostname, port, username, password)
-
-		stdin, stdout, stderr = client.exec_command("gdalinfo " + image_localPath)
+		stdin, stdout, stderr = client.exec_command("ls")
 		data = stdout.read().splitlines()
 		for line in data:
-			print "getEPSG_via_SSH " + line
-			substring = "AUTHORITY["EPSG","
-			substring_index = line.find(substring);
-			if( substring_index!= -1)
-			print substring_index
-
+			print line
 	except Exception as e:
 		print('*** Caught exception: ' + str(e.__class__) + ': ' + str(e))
     	traceback.print_exc()
@@ -40,16 +42,6 @@ def getEPSG_via_SSH(hostname=None, username=None, password=None, image_localPath
     		t.close()
     	except:
         	pass
-
-def getEPSG_local():
-			stdin, stdout, stderr = client.exec_command("gdalinfo " + image_localPath)
-		data = stdout.read().splitlines()
-		for line in data:
-			print "getEPSG_via_SSH " + line
-			substring = "AUTHORITY["EPSG","
-			substring_index = line.find(substring);
-			if( substring_index!= -1)
-			print substring_index
 
 # Set Definition for "mkdir -p"
 def mk_each_dir(sftp, inRemoteDir, outRemoteDir):
@@ -84,6 +76,7 @@ def connect_via_SSH_and_upload(hostname=None, username=None, password=None):
 
 	currentUserRemoteIn = '/home/giovamt/webAppFolder/imageToImage/users/' + username + '/in/'
 	currentUserRemoteOut = '/home/giovamt/webAppFolder/imageToImage/users/' + username + '/out/'
+	currentUserRemoteSourceDir = '/home/giovamt/webAppFolder/imageToImage/sources/'
 
 	print currentUserRemoteIn
 	print currentUserRemoteOut
@@ -113,6 +106,9 @@ def connect_via_SSH_and_upload(hostname=None, username=None, password=None):
 		# copy this demo onto the server
 		mk_each_dir(sftp,currentUserRemoteIn, currentUserRemoteOut)
 		print ('after')
+
+		global srcimage_b1_localPath, srcimage_rgb_localPath, rgbimage_b1_localPath; 
+
 		sourceimage_b1 = Image.objects.get(pk=1).sourceImage_b1
 		srcimage_b1_localPath = settings.MEDIA_ROOT + '/' + sourceimage_b1.name
 		sourceimage_rgb = Image.objects.get(pk=1).sourceImage_rgb
@@ -128,10 +124,7 @@ def connect_via_SSH_and_upload(hostname=None, username=None, password=None):
 		sftp.put(srcimage_rgb_localPath, currentUserRemoteIn +'/source_rgb.tif')
 		sftp.put(rgbimage_b1_localPath, currentUserRemoteIn +'/reference_band1.tif')
 
-	    # sftp.get('demo_sftp_folder/README', 'README_demo_sftp')
 		t.close()
-
-		getEPSG(hostkey, username, password, srcimage_b1_localPath);
 
 	except Exception as e:
 	    print('*** Caught exception: %s: %s' % (e.__class__, e))
@@ -164,6 +157,7 @@ def test_setup_and_upload(localrootpath=None,username=None):
 	mk_each_dir_local(currentUserLocalIn);
 	mk_each_dir_local(currentUserLocalOut);
 
+	global srcimage_b1_localPath, srcimage_rgb_localPath, rgbimage_b1_localPath; 
 	sourceimage_b1 = Image.objects.get(pk=1).sourceImage_b1
 	srcimage_b1_localPath = settings.MEDIA_ROOT + '/' + sourceimage_b1.name
 	sourceimage_rgb = Image.objects.get(pk=1).sourceImage_rgb
@@ -181,9 +175,56 @@ def setup_configuration_files(currentUserLocalInPath=None, currentUserLocalHomeP
 	config_src_filename = currentUserLocalHomePath + 'source.txt'
 	config_rfr_filename = currentUserLocalHomePath + 'reference.txt'
 
-	getEPSG_local(currentUserLocalInPath + '/source_band1.tif')
+	global srcimage_b1_localPath, srcimage_rgb_localPath, rgbimage_b1_localPath 
+	
+	imageEPSG = Image.objects.get(pk=1).epsg
+	print "setup_configuration_files"
+	print imageEPSG
+	print srcimage_b1_localPath
+	print srcimage_rgb_localPath
+	print rgbimage_b1_localPath
 
+	config_src = open(config_src_filename, 'w')
+	config_src.truncate()
+	line1 = srcimage_b1_localPath + "," + str(imageEPSG)
+	line2 = srcimage_rgb_localPath + "," + str(imageEPSG)	
+	config_src.write(line1)
+	config_src.write("\n")
+	config_src.write(line2)
+	config_src.write("\n")
+	config_src.close()
 
-	config_src = open('', 'w')
+	config_rfr = open(config_rfr_filename, 'w')
+	config_rfr.truncate()
+	line1 = rgbimage_b1_localPath + "," + str(imageEPSG)
+	config_rfr.write(line1)
+	config_rfr.close()
+
+def copyanything(src, dst):
+    try:
+        shutil.copytree(src, dst)
+    except OSError as exc: # python >2.5
+        if exc.errno == errno.ENOTDIR:
+            shutil.copy(src, dst)
+        else: raise
+
+def	run_routine_and_save(currentUsrLocalHomePath = None):
+	print "run_routine_and_save"
+
+# 	copy also the groovy script and the cuda routine directory
+	srcGroovy = roothPath + "sources/" + groovyScript
+	dstGroovy = currentUsrLocalHomePath + groovyScript
+
+	print(srcGroovy, dstGroovy)
+	shutil.copyfile(srcGroovy, dstGroovy)
+
+	srcCudadir = roothPath + "sources/" + cudaRunDirectory
+	dstCudadir = currentUsrLocalHomePath + cudaRunDirectory
+
+	print(srcCudadir, dstCudadir)
+
+	copyanything(srcCudadir, dstCudadir)
+	os.chdir(currentUsrLocalHomePath)
+	os.system("groovy " + dstGroovy + " source.txt " + "reference.txt");
 
 

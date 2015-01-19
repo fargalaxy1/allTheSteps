@@ -11,7 +11,9 @@ class SSHCredentials(models.Model):
 class Image(models.Model):
 	sourceImage_rgb = models.ImageField(upload_to='test')
 	sourceImage_b1 = models.ImageField(upload_to='test')
-	referenceImage_b1 = models.ImageField(upload_to='test')	 
+	referenceImage_b1 = models.ImageField(upload_to='test')
+	epsg = models.IntegerField(blank=True, null=True) 
+	
 	def __unicode__(self):
 		return self.image.name
 

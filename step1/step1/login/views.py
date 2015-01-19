@@ -6,21 +6,14 @@ from django.core.urlresolvers import reverse
 from step1.login import forms
 from step1.login.models import Image
 from step1.login.forms import ImageForm
-from .utils import connect_via_SSH_and_upload
+from .utils import connect_via_SSH_and_upload, setup_configuration_files, run_routine_and_save
 from .utils import test_setup_and_upload
 
 from django.db.models.signals import post_delete
 import logging
 import getpass
-
-imageEPSG = 0;
-
+import shutil
 logger = logging.getLogger("step1." + __name__)
-
-def getEPSG():
-	global imageEPSG;
-	sourceimage_b1 = Image.objects.get(pk=1).sourceImage_b1;
-	srcimage_b1_localPath = settings.MEDIA_ROOT + '/' + sourceimage_b1.name;
 
 
 def uploadFunction(request):
@@ -50,10 +43,14 @@ def uploadFunction(request):
 		if request.method == 'POST':
 			logger.debug("POST form")
 			form = ImageForm(request.POST, request.FILES)
+			logger.debug(request.FILES.keys()) 
+			logger.debug(request.POST.keys()) 
+
 			if form.is_valid():
 				newsrc_b1 = Image(sourceImage_b1 = request.FILES['sourceImage_b1'],
 					sourceImage_rgb = request.FILES['sourceImage_rgb'],
-					referenceImage_b1 = request.FILES['referenceImage_b1']
+					referenceImage_b1 = request.FILES['referenceImage_b1'],
+					epsg = request.POST['epsg']
 					)
 
 				newsrc_b1.save()
@@ -64,7 +61,6 @@ def uploadFunction(request):
 
 				# Redirect to the document list after POST
 				# return HttpResponseRedirect('sshcredentials/')
-				get_EPSG();
 				return HttpResponseRedirect('localTest/')
 
 		else:
@@ -106,6 +102,8 @@ def testLocally(request):
 	userName = 'giovamt'
 	roothPath = '/home/giovamt/webAppFolder/imageToImage/'
 	currentUsrLocalInPath = test_setup_and_upload(roothPath, userName);
-	currentUsrLocalHomePath = roothPath + 'users/' + username + '/'
+	currentUsrLocalHomePath = roothPath + 'users/' + userName + '/'
 	setup_configuration_files(currentUsrLocalInPath, currentUsrLocalHomePath);
+	run_routine_and_save(currentUsrLocalHomePath);
+
 	return HttpResponseRedirect('sshcredentials/')
