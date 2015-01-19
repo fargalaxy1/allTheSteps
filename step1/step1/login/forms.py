@@ -26,5 +26,8 @@ class SshCredentialsForm(forms.ModelForm):
     logger.debug("class SshCredentialsForm")
     class Meta:
         model = SSHCredentials
+        widgets = {
+        'password': forms.PasswordInput(),
+        }
         # logger.debug("END class SshCredentialsForm")
 

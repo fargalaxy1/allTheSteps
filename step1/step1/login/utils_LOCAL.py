@@ -18,9 +18,9 @@ rgbimage_b1_localPath = 0
 
 groovyScript = "imageToImage_Registration_cutSource.groovy"
 cudaRunDirectory = "cudaPhaseCorrelation/"
-roothPath = '/nfs/staging/giovamt/WebAppFolder/imageToImage/'
+roothPath = '/home/giovamt/webAppFolder/imageToImage/'
 
-def copyRunCodeInRemoteHost(hostname=None, username=None, password=None):
+def connect_via_SSH_and_ls(hostname=None, username=None, password=None):
 	UseGSSAPI = True             # enable GSS-API / SSPI authentication
 	DoGSSAPIKeyExchange = True
 	port = 22
@@ -31,51 +31,52 @@ def copyRunCodeInRemoteHost(hostname=None, username=None, password=None):
 		client.load_system_host_keys()
 		client.set_missing_host_key_policy(paramiko.WarningPolicy())
 		client.connect(hostname, port, username, password)
-
-		sourcesPath = roothPath + 'sources/'
-		cudaDirPath = sourcesPath + cudaRunDirectory
-		copyRunSourcesCommand = 'cp -r ' + cudaDirPath +  ' ' + roothPath + 'users/' + username + '/' + cudaRunDirectory 
-
-		stdin, stdout, stderr = client.exec_command(copyRunSourcesCommand)
-
-		srcGroovyScript = sourcesPath + groovyScript
-		dstGroovyScript = roothPath + 'users/' + username + '/' + groovyScript
-		copyGroovyScriptCommand = 'cp -r ' + srcGroovyScript +  ' ' + dstGroovyScript
-		stdin, stdout, stderr = client.exec_command(copyGroovyScriptCommand)
-
+		stdin, stdout, stderr = client.exec_command("ls")
+		data = stdout.read().splitlines()
+		for line in data:
+			print line
 	except Exception as e:
 		print('*** Caught exception: ' + str(e.__class__) + ': ' + str(e))
     	traceback.print_exc()
     	try:
-    		client.close()
+    		t.close()
     	except:
         	pass
 
 # Set Definition for "mkdir -p"
-def mk_each_dir(sftp, remoteDir):
-	currentDir = '/'
-	for dirElement in remoteDir.split('/'):
+def mk_each_dir(sftp, inRemoteDir, outRemoteDir):
+    currentDir = '/'
+    for dirElement in inRemoteDir.split('/'):
+        if dirElement:
+            currentDir += dirElement + '/'
+            # print('Try to mkdir on :' + currentDir)
+            try:
+                sftp.mkdir(currentDir)
+            except:
+            	pass
+            	print('%s already exists)' % currentDir)
+	for dirElement in outRemoteDir.split('/'):
 		if dirElement:
 			currentDir += dirElement + '/'
-			#print('Try to mkdir on :' + currentDir)
+			# print('Try to mkdir on :' + currentDir)
 			try:
 				sftp.mkdir(currentDir)
 			except:
 				pass
-			#print('%s already exists)' % currentDir)
+			print('%s already exists)' % currentDir)
 			
-			pass # fail silently if remote directory already exists
+			# pass # fail silently if remote directory already exists
             
-def remoteHost_Setup_and_upload(hostname=None, username=None, password=None):
+def connect_via_SSH_and_upload(hostname=None, username=None, password=None):
 
 	UseGSSAPI = True             # enable GSS-API / SSPI authentication
 	DoGSSAPIKeyExchange = True
 	port = 22
-	print('*** remoteHost_Setup_and_upload...')
+	print('*** connect_via_SSH_and_upload...')
 
-	currentUserRemoteIn = roothPath + 'users/' + username + '/in/'
-	currentUserRemoteOut = roothPath + 'users/' + username + '/out/'
-	#currentUserRemoteSourceDir = '/home/giovamt/webAppFolder/imageToImage/sources/'
+	currentUserRemoteIn = '/home/giovamt/webAppFolder/imageToImage/users/' + username + '/in/'
+	currentUserRemoteOut = '/home/giovamt/webAppFolder/imageToImage/users/' + username + '/out/'
+	currentUserRemoteSourceDir = '/home/giovamt/webAppFolder/imageToImage/sources/'
 
 	print currentUserRemoteIn
 	print currentUserRemoteOut
@@ -102,10 +103,8 @@ def remoteHost_Setup_and_upload(hostname=None, username=None, password=None):
 		t = paramiko.Transport((hostname, port))
 		t.connect(hostkey, username, password)
 		sftp = paramiko.SFTPClient.from_transport(t)
-
-		mk_each_dir(sftp,currentUserRemoteIn)
-		mk_each_dir(sftp,currentUserRemoteOut)
-
+		# copy this demo onto the server
+		mk_each_dir(sftp,currentUserRemoteIn, currentUserRemoteOut)
 		print ('after')
 
 		global srcimage_b1_localPath, srcimage_rgb_localPath, rgbimage_b1_localPath; 
@@ -116,6 +115,10 @@ def remoteHost_Setup_and_upload(hostname=None, username=None, password=None):
 		srcimage_rgb_localPath = settings.MEDIA_ROOT + '/' + sourceimage_rgb.name
 		referenceimage_b1 = Image.objects.get(pk=1).referenceImage_b1
 		rgbimage_b1_localPath = settings.MEDIA_ROOT + '/' + referenceimage_b1.name
+
+		print srcimage_b1_localPath
+		print sourceimage_rgb
+		print rgbimage_b1_localPath
 
 		sftp.put(srcimage_b1_localPath, currentUserRemoteIn +'/source_band1.tif')
 		sftp.put(srcimage_rgb_localPath, currentUserRemoteIn +'/source_rgb.tif')

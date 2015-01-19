@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse
 from step1.login import forms
 from step1.login.models import Image
 from step1.login.forms import ImageForm
-from .utils import connect_via_SSH_and_upload, setup_configuration_files, run_routine_and_save
+from .utils import remoteHost_Setup_and_upload, setup_configuration_files, run_routine_and_save, copyRunCodeInRemoteHost
 from .utils import test_setup_and_upload
 
 from django.db.models.signals import post_delete
@@ -24,8 +24,8 @@ def uploadFunction(request):
 		if request.method == 'POST':
 			if 'confirm_inputimgs' in request.POST:
 				logger.debug("confirm uploaded files")
-				# return HttpResponseRedirect('sshcredentials/')
-				return HttpResponseRedirect('localTest/')
+				return HttpResponseRedirect('sshcredentials/')
+				#return HttpResponseRedirect('localTest/')
 			elif 'update_inputimgs' in request.POST:
 				logger.debug("update files")
 				tobedeleted = Image.objects.filter(pk=1)
@@ -60,8 +60,8 @@ def uploadFunction(request):
 				# newref_b1.save()
 
 				# Redirect to the document list after POST
-				# return HttpResponseRedirect('sshcredentials/')
-				return HttpResponseRedirect('localTest/')
+				return HttpResponseRedirect('sshcredentials/')
+				#return HttpResponseRedirect('localTest/')
 
 		else:
 			logger.debug("else form")
@@ -91,7 +91,8 @@ class CollectSSHCredentials(FormView):
 		hostname = form.cleaned_data['hostname']
 		user = form.cleaned_data['user']
 		password = form.cleaned_data['password']
-		connect_via_SSH_and_upload(hostname, user, password)
+		remoteHost_Setup_and_upload(hostname, user, password)
+		copyRunCodeInRemoteHost(hostname, user, password)
 		return super(CollectSSHCredentials, self).form_valid(form)
 
 class ConnectViaSSH(TemplateView):
