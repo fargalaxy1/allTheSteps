@@ -93,8 +93,8 @@ class CollectSSHCredentials(FormView):
 		user = form.cleaned_data['user']
 		password = form.cleaned_data['password']
 		form.save(commit = True)
-		remoteHost_Setup_and_upload(hostname, user, password)
-		copyRunCode_and_set_conf_files_inRemoteHost(hostname, user, password)
+		# remoteHost_Setup_and_upload(hostname, user, password)
+		# copyRunCode_and_set_conf_files_inRemoteHost(hostname, user, password)
 		return super(CollectSSHCredentials, self).form_valid(form)
 
 class ConnectViaSSH(TemplateView):
