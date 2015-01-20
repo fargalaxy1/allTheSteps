@@ -6,13 +6,14 @@ from django.core.urlresolvers import reverse
 from step1.login import forms
 from step1.login.models import Image
 from step1.login.forms import ImageForm
-from .utils import remoteHost_Setup_and_upload, setup_configuration_files, run_routine_and_save, copyRunCodeInRemoteHost
+from .utils import remoteHost_Setup_and_upload, setup_configuration_files_rh, run_routine_and_save, copyRunCode_and_set_conf_files_inRemoteHost
 from .utils import test_setup_and_upload
 
 from django.db.models.signals import post_delete
 import logging
 import getpass
 import shutil
+import socket
 logger = logging.getLogger("step1." + __name__)
 
 
@@ -91,8 +92,9 @@ class CollectSSHCredentials(FormView):
 		hostname = form.cleaned_data['hostname']
 		user = form.cleaned_data['user']
 		password = form.cleaned_data['password']
+		form.save(commit = True)
 		remoteHost_Setup_and_upload(hostname, user, password)
-		copyRunCodeInRemoteHost(hostname, user, password)
+		copyRunCode_and_set_conf_files_inRemoteHost(hostname, user, password)
 		return super(CollectSSHCredentials, self).form_valid(form)
 
 class ConnectViaSSH(TemplateView):

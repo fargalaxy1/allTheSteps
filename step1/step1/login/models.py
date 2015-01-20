@@ -5,8 +5,11 @@ from django.db.models.signals import post_delete
 
 class SSHCredentials(models.Model):
 	hostname = models.CharField(max_length=200,  null=True, blank=True)
-	user = models.CharField(max_length=200,  null=True, blank=True)
+	user = models.CharField(max_length=200, unique = True, null=True, blank=True)
 	password = models.CharField(max_length=200,  null=True, blank=True)
+	
+	def __unicode__(self):              # __unicode__ on Python 2
+		return self.hostname
 
 class Image(models.Model):
 	sourceImage_rgb = models.ImageField(upload_to='test')

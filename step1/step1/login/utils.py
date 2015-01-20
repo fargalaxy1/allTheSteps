@@ -11,6 +11,7 @@ from paramiko.py3compat import input
 
 import paramiko
 from step1.login.models import Image
+from step1.login.models import SSHCredentials
 
 srcimage_b1_localPath = 0
 srcimage_rgb_localPath = 0
@@ -20,7 +21,7 @@ groovyScript = "imageToImage_Registration_cutSource.groovy"
 cudaRunDirectory = "cudaPhaseCorrelation/"
 roothPath = '/nfs/staging/giovamt/WebAppFolder/imageToImage/'
 
-def copyRunCodeInRemoteHost(hostname=None, username=None, password=None):
+def copyRunCode_and_set_conf_files_inRemoteHost(hostname=None, username=None, password=None):
 	UseGSSAPI = True             # enable GSS-API / SSPI authentication
 	DoGSSAPIKeyExchange = True
 	port = 22
@@ -224,4 +225,63 @@ def	run_routine_and_save(currentUsrLocalHomePath = None):
 	os.chdir(currentUsrLocalHomePath)
 	os.system("groovy " + dstGroovy + " source.txt " + "reference.txt");
 
+
+def setup_configuration_files_rh(username = None):
+	print "setup_configuration_files_rh"
+
+	UseGSSAPI = True             # enable GSS-API / SSPI authentication
+	DoGSSAPIKeyExchange = True
+	port = 22
+
+	userFilter = username
+	print userFilter
+	currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+	print currentUser_SSHCredentialsObject.password
+
+	# now, connect and use paramiko Client to negotiate SSH2 across the connection
+	# try:
+	# 	connectionHandler = paramiko.SSHClient()
+	# 	print('*** Connecting: setup_configuration_files_rh ...')
+	# 	connectionHandler.load_system_host_keys()
+	# 	connectionHandler.set_missing_host_key_policy(paramiko.WarningPolicy())
+	# 	connectionHandler.connect(hostname, port, username, password)
+
+	# 	global srcimage_b1_localPath, srcimage_rgb_localPath, rgbimage_b1_localPath 
+	# 	currentUserLocalHomePath = roothPath + 'users/' + username + '/'
+
+	# 	config_src_filename = currentUserLocalHomePath + 'source.txt'
+	# 	config_rfr_filename = currentUserLocalHomePath + 'reference.txt'
+
+	# 	imageEPSG = Image.objects.get(pk=1).epsg
+
+	# 	print imageEPSG
+	# 	print srcimage_b1_localPath
+	# 	print srcimage_rgb_localPath
+	# 	print rgbimage_b1_localPath
+
+	# 	remoteConfigFilesCmd_1 = 'config_src = open(' + config_src_filename + ', \'w\')'
+	# 	remoteConfigFilesCmd_2 = 'config_src.truncate()'
+
+	# 	stdin, stdout, stderr = connectionHandler.exec_command(remoteConfigFilesCmd_1)
+	# 	stdin, stdout, stderr = connectionHandler.exec_command(remoteConfigFilesCmd_2)
+
+	# 	line1 = srcimage_b1_localPath + "," + str(imageEPSG)
+	# 	line2 = srcimage_rgb_localPath + "," + str(imageEPSG)
+
+	# 	remoteConfigFilesCmd_3 = 'config_src.write(' + line1 + ')'
+	# 	remoteConfigFilesCmd_4 = 'config_src.write("\n")'
+	# 	remoteConfigFilesCmd_5 = 'config_src.write(' + line2 + ')'
+	# 	remoteConfigFilesCmd_6 = 'config_src.close()'
+	# 	# config_rfr = open(config_rfr_filename, 'w')
+	# 	# config_rfr.truncate()
+	# 	# line1 = rgbimage_b1_localPath + "," + str(imageEPSG)
+	# 	# config_rfr.write(line1)
+	# 	# config_rfr.close()	
+	# except Exception as e:
+	# 	print('*** Caught exception: ' + str(e.__class__) + ': ' + str(e))
+ #    	traceback.print_exc()
+ #    	try:
+ #    		connectionHandler.close()
+ #    	except:
+ #        	pass
 

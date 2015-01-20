@@ -2884,3 +2884,1123 @@ Traceback (most recent call last):
     for dirElement in inRemoteDir.split('/'):
                                             ^
 IndentationError: unindent does not match any outer indentation level
+[ERROR] 2015-01-20 09:13:29,595 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 242, in setup_configuration_files_rh
+    config_src = open(config_src_filename, 'w')
+IOError: [Errno 2] No such file or directory: '/nfs/staging/giovamt/WebAppFolder/imageToImage/giovamt/source.txt'
+[ERROR] 2015-01-20 09:15:05,669 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 244, in setup_configuration_files_rh
+    config_src = open(config_src_filename, 'w')
+IOError: [Errno 2] No such file or directory: '/nfs/staging/giovamt/WebAppFolder/imageToImage/giovamt/source.txt'
+[ERROR] 2015-01-20 09:15:53,348 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 244, in setup_configuration_files_rh
+    config_src = open(config_src_filename, 'w')
+IOError: [Errno 2] No such file or directory: '/nfs/staging/giovamt/WebAppFolder/imageToImage/users/giovamt/source.txt'
+[ERROR] 2015-01-20 09:34:34,427 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 246, in setup_configuration_files_rh
+    config_src = open(config_src_filename, 'w')
+IOError: [Errno 2] No such file or directory: '/nfs/staging/giovamt/WebAppFolder/imageToImage/users/giovamt/source.txt'
+[ERROR] 2015-01-20 09:36:17,657 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 246, in setup_configuration_files_rh
+    connectionHandler.config_src = open(config_src_filename, 'w')
+IOError: [Errno 2] No such file or directory: '/nfs/staging/giovamt/WebAppFolder/imageToImage/users/giovamt/source.txt'
+[ERROR] 2015-01-20 09:51:59,021 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import remoteHost_Setup_and_upload, setup_configuration_files_rh, run_routine_and_save, copyRunCode_and_set_conf_files_inRemoteHost
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 247
+    remoteConfigFilesCmd_1 = 'config_src = open(' + config_src_filename + ', 'w'')
+                                                                              ^
+SyntaxError: invalid syntax
+[ERROR] 2015-01-20 10:16:55,803 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 249, in setup_configuration_files_rh
+    stdin, stdout, stderr = connectionHandler.exec_command(remoteConfigFilesCmd_1)
+AttributeError: 'NoneType' object has no attribute 'exec_command'
+[ERROR] 2015-01-20 10:18:34,431 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import remoteHost_Setup_and_upload, setup_configuration_files_rh, run_routine_and_save, copyRunCode_and_set_conf_files_inRemoteHost
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 230
+    def setup_configuration_files_rh(username = None, connectionHandler):
+SyntaxError: non-default argument follows default argument
+[ERROR] 2015-01-20 10:20:38,089 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 278, in setup_configuration_files_rh
+    stdin, stdout, stderr = connectionHandler.exec_command(remoteConfigFilesCmd_1)
+AttributeError: 'NoneType' object has no attribute 'exec_command'
+[ERROR] 2015-01-20 10:21:08,592 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 278, in setup_configuration_files_rh
+    stdin, stdout, stderr = connectionHandler.exec_command(remoteConfigFilesCmd_1)
+AttributeError: 'NoneType' object has no attribute 'exec_command'
+[ERROR] 2015-01-20 10:29:17,525 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 98, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 103, in ConnectViaSSH
+    setup_configuration_files_rh(userName)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 278, in setup_configuration_files_rh
+    stdin, stdout, stderr = connectionHandler.exec_command(remoteConfigFilesCmd_1)
+AttributeError: 'NoneType' object has no attribute 'exec_command'
+[ERROR] 2015-01-20 10:43:39,234 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    # password = getpass.getpass()
+  File "/usr/lib/python2.7/getpass.py", line 83, in unix_getpass
+    passwd = fallback_getpass(prompt, stream)
+  File "/usr/lib/python2.7/getpass.py", line 118, in fallback_getpass
+    return _raw_input(prompt, stream)
+  File "/usr/lib/python2.7/getpass.py", line 133, in _raw_input
+    line = input.readline()
+IOError: [Errno 5] Input/output error
+[ERROR] 2015-01-20 10:43:56,066 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh()
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    password = SSHCredentials.objects.get(pk=1).password
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 10:54:28,792 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh()
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    passwordWD = SSHCredentials.objects.get(pk=1).password
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 11:02:57,149 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh()
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    passwordWD = SSHCredentials.objects.get(pk=1).password
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 11:03:18,516 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh()
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    passwordWD = SSHCredentials.objects.get(pk=1).password
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 11:11:01,343 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 239, in setup_configuration_files_rh
+    passwordWD = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 11:11:39,279 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 240, in setup_configuration_files_rh
+    passwordWD = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 11:14:12,947 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 241, in setup_configuration_files_rh
+    currentUser_password = currentUser_SSHCredentialsObject.password
+AttributeError: 'QuerySet' object has no attribute 'password'
+[ERROR] 2015-01-20 11:14:55,061 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 241, in setup_configuration_files_rh
+    currentUser_password = currentUser_SSHCredentialsObject.hostname
+AttributeError: 'QuerySet' object has no attribute 'hostname'
+[ERROR] 2015-01-20 11:15:10,216 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 107, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 241, in setup_configuration_files_rh
+    currentUser_password = currentUser_SSHCredentialsObject.user
+AttributeError: 'QuerySet' object has no attribute 'user'
+[ERROR] 2015-01-20 11:29:02,959 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 106, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+NameError: name 'username' is not defined
+[ERROR] 2015-01-20 11:36:23,768 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 9, in <module>
+    from .utils import remoteHost_Setup_and_upload, setup_configuration_files_rh, run_routine_and_save, copyRunCode_and_set_conf_files_inRemoteHost
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 241
+    print(e.headline)
+                    ^
+IndentationError: unindent does not match any outer indentation level
+[ERROR] 2015-01-20 12:38:44,759 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 104, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 12:38:44,878 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 99, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 104, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:01:14,615 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:01:14,956 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:02:21,621 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:02:38,888 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    # currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:02:40,571 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    # currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:03:41,393 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:08:24,985 django.request : Internal Server Error: /step1/sshcredentials/connect/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:08:30,483 django.request : Internal Server Error: /step1/sshcredentials
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 88, in get_response
+    response = middleware_method(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/middleware/common.py", line 71, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 596, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 476, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:09:35,586 django.request : Internal Server Error: /step1/sshcredentials
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 88, in get_response
+    response = middleware_method(request)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/middleware/common.py", line 71, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 596, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 476, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:14:42,112 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 313, in get
+    (self.model._meta.object_name, num))
+MultipleObjectsReturned: get() returned more than one SSHCredentials -- it returned 2!
+[ERROR] 2015-01-20 13:18:31,843 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:18:32,235 django.request : Internal Server Error: /step1/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
+[ERROR] 2015-01-20 13:18:42,780 django.request : Internal Server Error: /step1/sshcredentials/
+Traceback (most recent call last):
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/urls.py", line 8, in <module>
+    (r'^step1/', include('step1.login.urls')),
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/urls.py", line 2, in <module>
+    from step1.login import views, forms
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 100, in <module>
+    class ConnectViaSSH(TemplateView):
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/views.py", line 105, in ConnectViaSSH
+    setup_configuration_files_rh(username)
+  File "/home/giovamt/stacippa/gpuwebserver_project/allTheSteps/step1/step1/login/utils.py", line 238, in setup_configuration_files_rh
+    currentUser_SSHCredentialsObject = SSHCredentials.objects.get(user = userFilter)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/home/giovamt/stacippa/local/lib/python2.7/site-packages/django/db/models/query.py", line 310, in get
+    self.model._meta.object_name)
+DoesNotExist: SSHCredentials matching query does not exist.
