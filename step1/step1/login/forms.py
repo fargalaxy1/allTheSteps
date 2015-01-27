@@ -31,3 +31,8 @@ class SshCredentialsForm(forms.ModelForm):
         }
         # logger.debug("END class SshCredentialsForm")
 
+class CurrentUserForm(forms.Form):
+    logger.debug("class CurrentUserForm")
+
+    currentUserName = forms.CharField()
+    currentUserEmail = forms.EmailField()

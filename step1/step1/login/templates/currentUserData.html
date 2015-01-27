@@ -1,0 +1,16 @@
+<html lang="en">
+	<head>
+		<title>GPU server gateway</title>
+	</head>
+
+	<body>
+		<!-- Upload form. Note enctype attribute! -->
+		<form action="." method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			
+			<p>{{form.as_p}} </p>
+			<p><input type="submit" value="Upload" /></p>
+		</form>
+	
+    </body>
+</html>

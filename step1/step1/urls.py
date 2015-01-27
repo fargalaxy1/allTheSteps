@@ -6,5 +6,4 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 	(r'^step1/', include('step1.login.urls')),
-	)
-	# ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+	)+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

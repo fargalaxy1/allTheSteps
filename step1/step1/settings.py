@@ -79,6 +79,7 @@ USE_TZ = True
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+USRDIR_ROOT = os.path.join(BASE_DIR, "usrdir")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -88,13 +89,16 @@ MEDIA_URL = "/media/"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/usrdir/'
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
 )
+
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
 
 LOGGING = {
     'version': 1,
