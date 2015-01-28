@@ -1,0 +1,29 @@
+<html lang="en">
+	<head>
+		<title>GPU server gateway</title>
+	</head>
+
+	<body>
+				<!-- List of uploaded documents -->
+		{% if images %}
+			<ul>
+			{% for image in images %}
+				<li> <b> Source image panchromatic: </b> <a >{{ image.sourceImage_b1}}</a></li>
+				<li> <b> Source image rgb: </b> <a >{{ image.sourceImage_rgb}}</a></li>
+				<li> <b> Reference image panchromatic: </b> <a >{{ image.referenceImage_b1}}</a></li>
+				<li> <b> EPSG number: </b> <a >{{ image.epsg}}</a></li>				
+			{% endfor %}
+			</ul>
+		{% else %}
+			<p>No documents.</p>
+		{% endif %}
+
+	<form action="{% url "upload" %}" method="post">
+		{% csrf_token %}
+		<input type="submit" name="confirm_inputimgs" value="Confirm" />
+		<input type="submit" name="update_inputimgs" value="Update" />
+	</form>
+
+
+    </body>
+</html>
